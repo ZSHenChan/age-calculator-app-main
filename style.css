@@ -11,15 +11,17 @@ main{
     align-items: center;
     justify-content: center;
 }
+footer{
+    background-color: hsl(0, 0%, 94%);
+}
 
 .container{
     display: flex;
     flex-direction: column;
     background-color: white;
-    max-width: 50%;
+    max-width: 45%;
     min-height: 50%;
     padding: 20px;
-    padding-right: 60px;
     border-radius: 10px 10px 100px 10px;
 }
 
@@ -34,7 +36,7 @@ main{
 }
 
 .input-box{
-    max-width: 25%;
+    max-width: 29%;
     display: flex;
     flex-direction: column;
     padding-right: 20px;
@@ -49,14 +51,31 @@ main{
     font-size: 1.5rem;
     min-height: 40px;
 }
+.input-box .error-msg{
+    color: hsl(0, 100%, 67%);
+    font-size: 0.5rem;
+    letter-spacing: 0;
+    font-style: italic;
+    padding-top: 2px;
+    display: none;
+}
 
+form{
+    flex-direction: row;
+    display: flex;
+}
 .buttton img{
-    display: inline-flex;
-    justify-self: flex-end;
+    display: flex;
     max-width: 1.5rem;
     padding: 10px;
     background-color: hsl(259, 100%, 65%);
     border-radius: 50%;
+}
+button{
+    background-color: transparent;
+    border: none;
+    transform: translate(-10px, 50px);
+    cursor: pointer;
 }
 
 .display{

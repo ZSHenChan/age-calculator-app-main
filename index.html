@@ -22,21 +22,27 @@
   <main>
     <div class="container">
 
-      <div class="input-date">
-        <div class="input-box">
-          <label for="day">DAY</label>
-          <input id="day" type="number" placeholder="DD">
+      <form>
+        <div class="input-date">
+          <div class="input-box">
+            <label for="day">DAY</label>
+            <input id="day" type="number" placeholder="DD">
+            <label class="error-msg" for="day">Must be a valid day</label>
+          </div>
+          <div class="input-box">
+            <label for="month">MONTH</label>
+            <input id="month" type="number" placeholder="MM">
+            <label class="error-msg" for="day">Must be a valid month</label>
+          </div>
+          <div class="input-box">
+            <label for="year">YEAR</label>
+            <input id="year" type="number" placeholder="YYYY">
+            <label class="error-msg" for="day">Must be in the past</label>
+          </div>
         </div>
-        <div class="input-box">
-          <label for="month">MONTH</label>
-          <input id="month" type="number" placeholder="MM">
-        </div>
-        <div class="input-box">
-          <label for="year">YEAR</label>
-          <input id="year" type="number" placeholder="YYYY">
-        </div>
-      </div>
-      <span class="buttton"><img src="assets/images/icon-arrow.svg" alt="button"></span>
+        <button class="buttton"><img src="assets/images/icon-arrow.svg" alt="button"></button>
+      </form>
+      
       
       <div class="display">
         <div class="display-box">
@@ -56,11 +62,13 @@
     </div>
 
   </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">PieApplePie</a>.
+    </div>
+  </footer>
 </body>
-<footer>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">PieApplePie</a>.
-  </div>
-</footer>
+
+<script src="index.js"></script>
 </html>
