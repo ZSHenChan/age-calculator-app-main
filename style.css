@@ -31,7 +31,7 @@ footer{
     display: flex;
     flex-direction: row;
     border-bottom: solid 2px hsl(0, 0%, 94%);
-    align-items: center;
+    align-items:baseline;
     justify-self: flex-start;
 }
 
@@ -93,7 +93,7 @@ button{
     padding-right: 10px;
 }
 
-@media (max-width:500px){
+@media (max-width:600px){
     .input-box input{
         font-size: 1rem;
     }
