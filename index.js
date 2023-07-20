@@ -5,9 +5,9 @@ function isValid(dateOfBirth,tday){
     if (dateOfBirth>tday){
         return false;
     }
-    // else if(dateOfBirth instanceof Date == false){
-    //     return false;
-    // }
+    else if(dateOfBirth instanceof Date == false && !isNaN(dateOfBirth)){
+        return false;
+    }
     return true;
 }
 
