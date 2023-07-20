@@ -40,16 +40,16 @@ form.addEventListener('submit',function(e){
     }
 
     else{
-        // redLabels.forEach(redLabel => {
-        //     redLabel.style.color = "black";
-        // })
-        // redBoxes.forEach(redbox => {
-        //     redbox.style.borderColor = "black";
-        // })
-        // errorMsgs.forEach(errorMsg => {
-        //     errorMsg.style.display = "none";
-        // })
-        // button.style.transform = "translate(-10px, 50px)";
+        redLabels.forEach(redLabel => {
+            redLabel.style.color = "black";
+        })
+        redBoxes.forEach(redbox => {
+            redbox.style.borderColor = "black";
+        })
+        errorMsgs.forEach(errorMsg => {
+            errorMsg.style.display = "none";
+        })
+        button.style.transform = "translate(-10px, 50px)";
 
         // calculate age
         const newDay = document.getElementById("new-day");

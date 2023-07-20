@@ -51,6 +51,12 @@ footer{
     font-size: 1.5rem;
     min-height: 40px;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .input-box .error-msg{
     color: hsl(0, 100%, 67%);
     font-size: 0.5rem;
